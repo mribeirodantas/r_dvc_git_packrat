@@ -1,12 +1,12 @@
-md5: 6d0ace6756e48ede6607898b0a86ddb8
+md5: 12730b12fe9311f04ae57f721d3d4418
 cmd: Rscript miic.R
 deps:
-- md5: 41b2c3bd2cafb14ab8224609b492005d
+- md5: 8825c3e9cec2ecaa1e91ab7b7c784ea5
   path: data/simulation_preprocessed.csv
 - md5: 1224350c2c758ca2659b625d30edd619
   path: miic.R
 outs:
-- md5: c5a953e1abd46b007cdf570a3ea2b6eb
+- md5: 71d42374184fae6f8cfcace20b060133
   path: output_dir/all.edges.summary.csv
   cache: true
   metric: false
