@@ -1,0 +1,13 @@
+md5: 9a5122c7e819185261d8bc4a45b77ae7
+cmd: Rscript preprocess.R
+deps:
+- md5: f60138b37f5f4f9619c34d237bbd24dc
+  path: data/simulation.tsv
+- md5: bba9f3daa67b517f15934d4ea8e8e2e6
+  path: preprocess.R
+outs:
+- md5: 41b2c3bd2cafb14ab8224609b492005d
+  path: data/simulation_preprocessed.csv
+  cache: true
+  metric: false
+  persist: false
