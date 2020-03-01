@@ -1,0 +1,13 @@
+md5: a6103cfb9fb73d922fa08e0c6c7c5588
+cmd: Rscript final.R
+deps:
+- md5: c5a953e1abd46b007cdf570a3ea2b6eb
+  path: output_dir/all.edges.summary.csv
+- md5: fea2814b19bf0ded4923cd8c6ff43874
+  path: final.R
+outs:
+- md5: 7c9aa6c543e10afce593ac8a86fd1993
+  path: output_dir/retained.edges.csv
+  cache: true
+  metric: false
+  persist: false
