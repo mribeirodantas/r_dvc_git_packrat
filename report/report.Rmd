@@ -1,0 +1,59 @@
+---
+title: "Template report"
+author: "Marcel Ribeiro-Dantas <marcel-ribeiro-dantas@curie.fr>"
+date: \`r format(Sys.Date(), " Created on 01/03/2020. **Last updated on** %d/%m/%Y.")`
+output:
+  html_document:
+    code_folding: hide
+    toc: true
+    toc_float: true
+    theme: united
+    highlight: tango
+    number_sections: false
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Dataset
+
+You can talk about your dataset here. What does it mean? What do you expect to achieve with it? Maybe introduce the scenario from which the data was collected or the procedure through which you obtained the dataset. This section usually is not very technical.
+
+### Plots
+
+You could also embed some plots related to the dataset (not from data within the dataset itself). If it's data on cancer patients, you could have a plot describing the distribution of patients according to some criteria to be later compared to what you will find in the dataset.
+
+```{r pressure, echo=FALSE}
+plot(pressure)
+```
+
+## Analyses
+Here you start the technical part.
+
+### Preprocessing
+The preprocessing was done this and this way... (code below)
+
+```{r code=readLines("../preprocess.R"), tidy=TRUE, tidy.opts=list(comment=FALSE), eval=FALSE}
+```
+
+### Network inference
+Here you can talk about the methodology for network inference.
+
+```{r code=readLines("../miic.R"), tidy=TRUE, tidy.opts=list(comment=FALSE), eval=FALSE}
+```
+
+### Final part
+Some extra step that you performed in your analyses after the inference.
+
+```{r code=readLines("../final.R"), tidy=TRUE, tidy.opts=list(comment=FALSE), eval=FALSE}
+```
+
+### Metrics
+Discussion about some metrics, your results and so on.
+
+```{r code=readLines("../evaluate.R"), tidy=TRUE, tidy.opts=list(comment=FALSE), eval=FALSE}
+```
+
+### Final remarks
+Here it's the final message you want to pass to your client, public, manager and so on. You should have plots, among other things, all over this report. Remember, this is a basic tutorial!
