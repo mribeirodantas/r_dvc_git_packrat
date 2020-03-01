@@ -1,0 +1,13 @@
+md5: d5c5917a06ade22ba2a1b5b7ccb47e3a
+cmd: Rscript evaluate.R
+deps:
+- md5: 7c9aa6c543e10afce593ac8a86fd1993
+  path: output_dir/retained.edges.csv
+- md5: 2d7010b76550d6ff58ff2896d035ae00
+  path: evaluate.R
+outs:
+- md5: 071867626474acbe0af380ca62c1e98f
+  path: output_dir/metric.txt
+  cache: true
+  metric: true
+  persist: false
